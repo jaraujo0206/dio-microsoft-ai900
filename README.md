@@ -80,6 +80,7 @@ conforme necessário para avançar pela interface do usuário:
 
     Selecione Criar . Após a criação do conjunto de dados, selecione o conjunto de dados bike-rentals para continuar a 
     enviar o trabalho de ML automatizado.
+    
 ![alt text](image-5.png)
 
     Configurações da tarefa :
@@ -88,6 +89,7 @@ conforme necessário para avançar pela interface do usuário:
        . Conjunto de dados : aluguel de bicicletas
        . Coluna de destino : aluguéis (inteiro)
        . Configurações adicionais :
+
 ![alt text](image-7.png)
 
             . Métrica primária : NormalizedRootMeanSquaredError
@@ -95,9 +97,11 @@ conforme necessário para avançar pela interface do usuário:
             . Habilitar empilhamento de conjunto : Não selecionado
             . Usar todos os modelos suportados : Não selecionado. Você restringirá o trabalho para tentar apenas alguns algoritmos específicos.
             . Modelos permitidos : Selecione apenas RandomForest e LightGBM — normalmente você tentaria o máximo possível, mas cada modelo adicionado aumenta o tempo necessário para executar o trabalho.
+
 ![alt text](image-6.png)
 
-. Limites : Expandir esta seção
+Limites : Expandir esta seção
+
 Máximo de ensaios :3
 Máximo de ensaios simultâneos :3
 Máximo de nós :3
@@ -109,6 +113,7 @@ Habilitar rescisão antecipada : Selecionado
 ![alt text](image-9.png)
         
 Validação e teste :
+
 Tipo de validação : Divisão de teste de treinamento
 Porcentagem de dados de validação : 10
 Conjunto de dados de teste : Nenhum
