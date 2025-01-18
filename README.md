@@ -61,26 +61,26 @@ conforme necessário para avançar pela interface do usuário:
             Descrição : Dados histórico sobre aluguel de bicicleta
             Tipo : Tabela (mltable)
 
-            ![alt text](image-1.png)    
+![alt text](image-1.png)    
 
     Fonte de dados :
 
         Selecione De arquivos locais
-        ![alt text](image-2.png)
+![alt text](image-2.png)
     Tipo de armazenamento de destino :
         
         Tipo de armazenamento de dados : Azure Blob Storage
         Nome : workspaceblobstore
-        ![alt text](image-3.png)
+![alt text](image-3.png)
     
     Seleção de MLtable :
      
         Pasta de upload : Baixe e descompacte a pasta que contém os dois arquivos que você precisa enviar https://aka.ms/bike-rentals
-        ![alt text](image-4.png)
+![alt text](image-4.png)
 
     Selecione Criar . Após a criação do conjunto de dados, selecione o conjunto de dados bike-rentals para continuar a 
     enviar o trabalho de ML automatizado.
-    ![alt text](image-5.png)
+![alt text](image-5.png)
 
     Configurações da tarefa :
 
@@ -88,14 +88,14 @@ conforme necessário para avançar pela interface do usuário:
        . Conjunto de dados : aluguel de bicicletas
        . Coluna de destino : aluguéis (inteiro)
        . Configurações adicionais :
-        ![alt text](image-7.png)
+![alt text](image-7.png)
 
             . Métrica primária : NormalizedRootMeanSquaredError
             . Explique o melhor modelo : Não selecionado
             . Habilitar empilhamento de conjunto : Não selecionado
             . Usar todos os modelos suportados : Não selecionado. Você restringirá o trabalho para tentar apenas alguns algoritmos específicos.
             . Modelos permitidos : Selecione apenas RandomForest e LightGBM — normalmente você tentaria o máximo possível, mas cada modelo adicionado aumenta o tempo necessário para executar o trabalho.
-            ![alt text](image-6.png)
+![alt text](image-6.png)
 
         . Limites : Expandir esta seção
             . Máximo de ensaios :3
@@ -105,13 +105,13 @@ conforme necessário para avançar pela interface do usuário:
             . Tempo limite do experimento :15
             . Tempo limite de iteração :15
             . Habilitar rescisão antecipada : Selecionado
-            ![alt text](image-9.png)
+![alt text](image-9.png)
         
         . Validação e teste :
             . Tipo de validação : Divisão de teste de treinamento
             . Porcentagem de dados de validação : 10
             . Conjunto de dados de teste : Nenhum
-            ![alt text](image-10.png)
+![alt text](image-10.png)
 
     Computação :
         . Selecione o tipo de computação : Sem servidor
@@ -119,7 +119,7 @@ conforme necessário para avançar pela interface do usuário:
         . Camada de máquina virtual : Dedicada
         . Tamanho da máquina virtual : Standard_DS3_V2*
         . Número de instâncias : 1
-        ![alt text](image-11.png)
+![alt text](image-11.png)
     
 3. Envie o trabalho de treinamento. Ele inicia automaticamente.
 ![alt text](image-12.png)
