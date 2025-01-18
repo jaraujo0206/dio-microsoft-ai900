@@ -2,7 +2,7 @@
 
  readme treinamento ai-900 DIO
 
-##Criar um espaço de trabalho do Azure Machine Learning
+Criar um espaço de trabalho do Azure Machine Learning
 
 Para usar o Azure Machine Learning, você precisa provisionar um workspace do Azure Machine Learning na sua assinatura do Azure.
 Então você poderá usar o Azure Machine Learning Studio para trabalhar com os recursos no seu workspace.
@@ -24,7 +24,7 @@ Então você poderá usar o Azure Machine Learning Studio para trabalhar com os 
 minutos) e, em seguida, vá para o recurso implantado.
 ![alt text](image-13.png)
 
-##Estúdio de lançamento
+Estúdio de lançamento
 
 1. No seu recurso de espaço de trabalho do Azure Machine Learning, selecione Iniciar estúdio (ou abra uma nova guia do
 navegador e navegue até https://ml.azure.com e entre no estúdio do Azure Machine Learning usando sua conta da Microsoft).
@@ -33,7 +33,7 @@ Feche todas as mensagens exibidas.
 2. No Azure Machine Learning Studio, você deve ver seu workspace recém-criado. Caso contrário, selecione All workspaces no
 menu à esquerda e, em seguida, selecione o workspace que você acabou de criar.
 
-## Use aprendizado de máquina automatizado para treinar um modelo
+Use aprendizado de máquina automatizado para treinar um modelo
 O machine learning automatizado permite que você experimente vários algoritmos e 
 parâmetros para treinar vários modelos e identificar o melhor para seus dados. Neste exercício, você usará um conjunto de dados de detalhes históricos de aluguel de 
 bicicletas para treinar um modelo que prevê o número de aluguéis de bicicletas que devem ser esperados em um determinado
