@@ -49,8 +49,7 @@ conforme necessário para avançar pela interface do usuário:
         Novo nome do experimento : mslearn-aluguel-biclicletas
         Descrição : Aprendizado de máquina automatizado para previsão de aluguel de bicicletas
         Tags : nenhuma
-
-        ![alt text](image.png)
+![alt text](image.png)
     
     Tipo de tarefa e dados :
 
