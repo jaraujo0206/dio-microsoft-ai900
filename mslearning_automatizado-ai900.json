@@ -1,0 +1,265 @@
+{
+    "runId": "silver_rocket_1420cby11r_0",
+    "runUuid": "6b9a8763-0096-42e2-8cf3-ae3dca64d4cc",
+    "parentRunUuid": "fd9a7f8a-b206-4a4f-a668-1399306a5bb0",
+    "rootRunUuid": "fd9a7f8a-b206-4a4f-a668-1399306a5bb0",
+    "target": "Serverless",
+    "status": "Completed",
+    "parentRunId": "silver_rocket_1420cby11r",
+    "dataContainerId": "dcid.silver_rocket_1420cby11r_0",
+    "createdTimeUtc": "2025-01-18T00:37:33.8008291+00:00",
+    "startTimeUtc": "2025-01-18T00:38:02.399Z",
+    "endTimeUtc": "2025-01-18T00:38:22.925Z",
+    "error": null,
+    "warnings": null,
+    "tags": {
+        "_aml_system_linked_batch_run_id": "silver_rocket_1420cby11r_worker_0",
+        "_aml_system_azureml.automlComponent": "AutoML",
+        "_aml_system_codegen": "completed",
+        "_aml_system_automl_is_child_run_end_telemetry_event_logged": "True"
+    },
+    "properties": {
+        "runTemplate": "automl_child",
+        "pipeline_id": "faf12f74cf9bbd358ca5525682c5030d36f7be7c",
+        "pipeline_spec": "{\"objects\":[{\"spec_class\":\"preproc\",\"class_name\":\"MaxAbsScaler\",\"module\":\"sklearn.preprocessing\",\"param_args\":[],\"param_kwargs\":{},\"prepared_kwargs\":{}},{\"spec_class\":\"sklearn\",\"class_name\":\"LightGBMRegressor\",\"module\":\"automl.client.core.common.model_wrappers\",\"param_args\":[],\"param_kwargs\":{\"min_data_in_leaf\":20},\"prepared_kwargs\":{}}],\"pipeline_id\":\"faf12f74cf9bbd358ca5525682c5030d36f7be7c\",\"module\":\"sklearn.pipeline\",\"class_name\":\"Pipeline\"}",
+        "training_percent": "100",
+        "predicted_cost": null,
+        "iteration": "0",
+        "_aml_system_scenario_identification": "Remote.Child",
+        "run_preprocessor": "MaxAbsScaler",
+        "run_algorithm": "LightGBM",
+        "model_output_path": "outputs/model.pkl",
+        "conda_env_data_location": "aml://artifact/ExperimentRun/dcid.silver_rocket_1420cby11r_0/outputs/conda_env_v_1_0_0.yml",
+        "model_data_location": "aml://artifact/ExperimentRun/dcid.silver_rocket_1420cby11r_0/outputs/model.pkl",
+        "model_size_on_disk": "251103",
+        "scoring_data_location": "aml://artifact/ExperimentRun/dcid.silver_rocket_1420cby11r_0/outputs/scoring_file_v_1_0_0.py",
+        "scoring_data_location_v2": "aml://artifact/ExperimentRun/dcid.silver_rocket_1420cby11r_0/outputs/scoring_file_v_2_0_0.py",
+        "scoring_data_location_pbi": "aml://artifact/ExperimentRun/dcid.silver_rocket_1420cby11r_0/outputs/scoring_file_pbi_v_1_0_0.py",
+        "model_exp_support": "True",
+        "pipeline_graph_version": "1.0.0",
+        "model_name": "silverrocket1420",
+        "score": "0.09357675586470318",
+        "score_table": "NaN",
+        "pipeline_script": "{\"objects\":[{\"spec_class\":\"preproc\",\"class_name\":\"MaxAbsScaler\",\"module\":\"sklearn.preprocessing\",\"param_args\":[],\"param_kwargs\":{},\"prepared_kwargs\":{}},{\"spec_class\":\"sklearn\",\"class_name\":\"LightGBMRegressor\",\"module\":\"automl.client.core.common.model_wrappers\",\"param_args\":[],\"param_kwargs\":{\"min_data_in_leaf\":20},\"prepared_kwargs\":{}}],\"pipeline_id\":\"faf12f74cf9bbd358ca5525682c5030d36f7be7c\",\"module\":\"sklearn.pipeline\",\"class_name\":\"Pipeline\"}",
+        "training_type": "train_valid",
+        "fit_time": "0.071338",
+        "goal": "normalized_root_mean_squared_error_min",
+        "primary_metric": "normalized_root_mean_squared_error",
+        "errors": "{}",
+        "onnx_model_resource": "{}",
+        "dependencies_versions": "{\"azureml-automl-runtime\": \"1.58.0\", \"azureml-training-tabular\": \"1.58.0\", \"azureml-dataset-runtime\": \"1.58.0\", \"azureml-responsibleai\": \"1.58.0\", \"azureml-train-automl-client\": \"1.58.0\", \"azureml-pipeline-core\": \"1.58.0\", \"azureml-dataprep-rslex\": \"2.22.5\", \"azureml-dataprep\": \"5.1.6\", \"azureml-train-restclients-hyperdrive\": \"1.58.0\", \"azureml-interpret\": \"1.58.0\", \"azureml-dataprep-native\": \"41.0.0\", \"azureml-inference-server-http\": \"1.4.0\", \"azureml-defaults\": \"1.58.0\", \"azureml-telemetry\": \"1.58.0\", \"azureml-train-automl-runtime\": \"1.58.0\", \"azureml-mlflow\": \"1.58.0.post3\", \"azureml-train-automl\": \"1.58.0\", \"azureml-automl-core\": \"1.58.0\", \"azureml-train-core\": \"1.58.0\", \"azureml-core\": \"1.58.0.post1\"}",
+        "num_cores": "4",
+        "num_logical_cores": "4",
+        "peak_memory_usage": "1698220",
+        "vm_configuration": "x86_64",
+        "core_hours": "0.004562703611111112",
+        "feature_skus": "automatedml_sdk_featureengineeringcustomization,automatedml_sdk_guardrails"
+    },
+    "parameters": {},
+    "services": {},
+    "inputDatasets": [],
+    "outputDatasets": [],
+    "runDefinition": {
+        "script": "automl_driver.py",
+        "useAbsolutePath": true,
+        "arguments": [],
+        "sourceDirectoryDataStore": null,
+        "framework": "Python",
+        "target": "Serverless",
+        "autoClusterComputeSpecification": {
+            "instanceSize": "Standard_DS3_v2",
+            "instancePriority": "Dedicated",
+            "osType": null,
+            "location": null,
+            "runtimeVersion": null
+        },
+        "dataReferences": {},
+        "data": {},
+        "outputData": {},
+        "datacaches": [],
+        "jobName": null,
+        "maxRunDurationSeconds": null,
+        "nodeCount": null,
+        "maxNodeCount": 3,
+        "instanceTypes": [],
+        "priority": null,
+        "credentialPassthrough": false,
+        "identity": null,
+        "environment": {
+            "name": "AzureML-ai-ml-automl",
+            "version": "12",
+            "assetId": "azureml://registries/azureml/environments/ai-ml-automl/versions/12",
+            "autoRebuild": false,
+            "python": {
+                "interpreterPath": null,
+                "userManagedDependencies": true,
+                "condaDependencies": null,
+                "baseCondaEnvironment": null
+            },
+            "environmentVariables": {},
+            "docker": {
+                "baseImage": null,
+                "platform": {
+                    "os": "Linux",
+                    "architecture": "amd64"
+                },
+                "baseDockerfile": null,
+                "buildContext": {
+                    "locationType": "storageAccount",
+                    "location": "https://amlwlrt4use01.blob.core.windows.net/azureml-659fa2de-a415-5896-8b92-dd6b3be45bc7/context",
+                    "dockerfilePath": "Dockerfile"
+                },
+                "baseImageRegistry": null
+            },
+            "spark": {
+                "repositories": [],
+                "packages": [],
+                "precachePackages": true
+            },
+            "inferencingStackVersion": null
+        },
+        "history": {
+            "outputCollection": true,
+            "directoriesToWatch": [
+                "logs"
+            ],
+            "enableMLflowTracking": true
+        },
+        "spark": {
+            "configuration": {}
+        },
+        "parallelTask": {
+            "maxRetriesPerWorker": 0,
+            "workerCountPerNode": 1,
+            "terminalExitCodes": null,
+            "configuration": {}
+        },
+        "amlCompute": {
+            "name": "Serverless",
+            "vmSize": null,
+            "retainCluster": false,
+            "clusterMaxNodeCount": 3
+        },
+        "aiSuperComputer": {
+            "instanceType": "D2",
+            "imageVersion": null,
+            "location": null,
+            "aiSuperComputerStorageData": null,
+            "interactive": false,
+            "scalePolicy": null,
+            "virtualClusterArmId": null,
+            "tensorboardLogDirectory": null,
+            "sshPublicKey": null,
+            "sshPublicKeys": null,
+            "enableAzmlInt": true,
+            "priority": "Medium",
+            "slaTier": "Standard",
+            "userAlias": null
+        },
+        "kubernetesCompute": {
+            "instanceType": null
+        },
+        "tensorflow": {
+            "workerCount": 0,
+            "parameterServerCount": 0
+        },
+        "mpi": {
+            "processCountPerNode": 0
+        },
+        "pyTorch": {
+            "communicationBackend": null,
+            "processCount": null
+        },
+        "hdi": {
+            "yarnDeployMode": "None"
+        },
+        "containerInstance": {
+            "region": null,
+            "cpuCores": 2,
+            "memoryGb": 3.5
+        },
+        "exposedPorts": null,
+        "docker": {
+            "useDocker": true,
+            "sharedVolumes": null,
+            "shmSize": null,
+            "arguments": null
+        },
+        "cmk8sCompute": {
+            "configuration": {}
+        },
+        "commandReturnCodeConfig": {
+            "returnCode": "Zero",
+            "successfulReturnCodes": []
+        },
+        "environmentVariables": {
+            "AUTOML_SDK_RESOURCE_URL": "https://aka.ms/automl-resources/"
+        },
+        "applicationEndpoints": {},
+        "parameters": []
+    },
+    "logFiles": {},
+    "jobCost": {
+        "chargedCpuCoreSeconds": null,
+        "chargedCpuMemoryMegabyteSeconds": null,
+        "chargedGpuSeconds": null,
+        "chargedNodeUtilizationSeconds": null
+    },
+    "revision": 9,
+    "runTypeV2": {
+        "orchestrator": null,
+        "traits": [
+            "automl",
+            "Remote.Child"
+        ],
+        "attribution": null,
+        "computeType": null
+    },
+    "settings": {},
+    "computeRequest": null,
+    "compute": null,
+    "createdBy": {
+        "userObjectId": "1eb78375-a6e3-4697-bc5a-d327a0414f33",
+        "userPuId": "1003BFFD8C653EEB",
+        "userIdp": "live.com",
+        "userAltSecId": "1:live.com:0006BFFD82AFA61D",
+        "userIss": "https://sts.windows.net/84496739-43e6-4b4d-a8ea-3e3cf2e497eb/",
+        "userTenantId": "84496739-43e6-4b4d-a8ea-3e3cf2e497eb",
+        "userName": "Julio Araujo",
+        "upn": null
+    },
+    "computeDuration": "00:00:20.5254999",
+    "effectiveStartTimeUtc": null,
+    "runNumber": 1737160653,
+    "rootRunId": "silver_rocket_1420cby11r",
+    "experimentId": "ca6d8ca0-a1c5-4df0-8f18-ed4bc6a21208",
+    "userId": "1eb78375-a6e3-4697-bc5a-d327a0414f33",
+    "statusRevision": 2,
+    "currentComputeTime": null,
+    "lastStartTimeUtc": null,
+    "lastModifiedBy": {
+        "userObjectId": "1eb78375-a6e3-4697-bc5a-d327a0414f33",
+        "userPuId": "1003BFFD8C653EEB",
+        "userIdp": "live.com",
+        "userAltSecId": "1:live.com:0006BFFD82AFA61D",
+        "userIss": "https://sts.windows.net/84496739-43e6-4b4d-a8ea-3e3cf2e497eb/",
+        "userTenantId": "84496739-43e6-4b4d-a8ea-3e3cf2e497eb",
+        "userName": "Julio Araujo",
+        "upn": null
+    },
+    "lastModifiedUtc": "2025-01-18T00:38:23.339484+00:00",
+    "duration": "00:00:20.5254999",
+    "inputs": {
+        "training_data": {
+            "assetId": "azureml://locations/eastus/workspaces/47b707c5-8283-4ee5-bb62-e0a895349675/data/aluguel-bicicleta/versions/1",
+            "type": "MLTable"
+        }
+    },
+    "outputs": {
+        "mlflow_log_model_927412604": {
+            "assetId": "azureml://locations/eastus/workspaces/47b707c5-8283-4ee5-bb62-e0a895349675/models/azureml_silver_rocket_1420cby11r_0_output_mlflow_log_model_927412604/versions/1",
+            "type": "MLFlowModel"
+        }
+    },
+    "currentAttemptId": 1
+}
