@@ -98,32 +98,38 @@ conforme necessário para avançar pela interface do usuário:
 ![alt text](image-6.png)
 
 . Limites : Expandir esta seção
-    . Máximo de ensaios :3
-    . Máximo de ensaios simultâneos :3
-    . Máximo de nós :3
-    . Limite de pontuação métrica : 0.085( para que se um modelo atingir uma pontuação métrica de erro quadrático médio normalizado de 0,085 ou menos, o trabalho termine. )
-    . Tempo limite do experimento :15
-    . Tempo limite de iteração :15
-    . Habilitar rescisão antecipada : Selecionado
+Máximo de ensaios :3
+Máximo de ensaios simultâneos :3
+Máximo de nós :3
+Limite de pontuação métrica : 0.085( para que se um modelo atingir uma pontuação métrica de erro quadrático médio normalizado de 0,085 ou menos, o trabalho termine. )
+Tempo limite do experimento :15
+Tempo limite de iteração :15
+Habilitar rescisão antecipada : Selecionado
+
 ![alt text](image-9.png)
         
-. Validação e teste :
-    . Tipo de validação : Divisão de teste de treinamento
-    . Porcentagem de dados de validação : 10
-    . Conjunto de dados de teste : Nenhum
+Validação e teste :
+Tipo de validação : Divisão de teste de treinamento
+Porcentagem de dados de validação : 10
+Conjunto de dados de teste : Nenhum
+
 ![alt text](image-10.png)
 
 Computação :
-    . Selecione o tipo de computação : Sem servidor
-    . Tipo de máquina virtual : CPU
-    . Camada de máquina virtual : Dedicada
-    . Tamanho da máquina virtual : Standard_DS3_V2*
-    . Número de instâncias : 1
+Selecione o tipo de computação : Sem servidor
+Tipo de máquina virtual : CPU
+Camada de máquina virtual : Dedicada
+Tamanho da máquina virtual : Standard_DS3_V2*
+Número de instâncias : 1
+
 ![alt text](image-11.png)
     
 3. Envie o trabalho de treinamento. Ele inicia automaticamente.
+
 ![alt text](image-12.png)
+
 4. Espere o trabalho terminar. Pode levar um tempo!
+
 ![alt text](image-14.png)
 
 ##Avalie o melhor modelo
