@@ -37,34 +37,38 @@ Feche todas as mensagens exibidas.
 **1**. No Azure Machine Learning Studio , visualize a página ML automatizado (em Criação ).  
 **2**. Crie um novo trabalho de ML automatizado com as seguintes configurações, usando Avançar conforme necessário para avançar pela interface do usuário:
 
-Configurações básicas :
+### Configurações básicas :
 
-Nome do trabalho : O campo Nome do trabalho já deve estar preenchido previamente com um nome exclusivo. Mantenha-o como está.
-Novo nome do experimento : mslearn-aluguel-biclicletas
-Descrição : Aprendizado de máquina automatizado para previsão de aluguel de bicicletas
-Tags : nenhuma
+**Nome do trabalho** : O campo Nome do trabalho já deve estar preenchido previamente com um nome exclusivo. Mantenha-o como está.  
+**Novo nome do experimento** : mslearn-aluguel-biclicletas  
+**Descrição** : Aprendizado de máquina automatizado para previsão de aluguel de bicicletas  
+**Tags** : nenhuma
+
 ![alt text](image.png)
     
-    Tipo de tarefa e dados :
+### Tipo de tarefa e dados :
 
-        Selecione o tipo de tarefa : Regressão
-        Selecionar conjunto de dados : Crie um novo conjunto de dados com as seguintes configurações:
+> **Selecione o tipo de tarefa** : Regressão  
+**Selecionar conjunto de dados** : Crie um novo conjunto de dados com as seguintes configurações:
         
-        Tipo de dados :
-            Nome :aluguel-bicicleta
-            Descrição : Dados histórico sobre aluguel de bicicleta
-            Tipo : Tabela (mltable)
+#### Tipo de dados :
 
-![alt text](image-1.png)    
+>**Nome** : aluguel-bicicleta  
+**Descrição** : Dados histórico sobre aluguel de bicicleta  
+**Tipo** : Tabela (mltable)
 
-    Fonte de dados :
+![alt text](image-1.png)
 
-        Selecione De arquivos locais
+#### Fonte de dados :
+
+Selecione a opção ***"De arquivos locais"***.
 ![alt text](image-2.png)
-    Tipo de armazenamento de destino :
+
+#### Tipo de armazenamento de destino :
         
-        Tipo de armazenamento de dados : Azure Blob Storage
-        Nome : workspaceblobstore
+>**Tipo de armazenamento de dados** : Azure Blob Storage  
+**Nome** : workspaceblobstore
+
 ![alt text](image-3.png)
     
     Seleção de MLtable :
